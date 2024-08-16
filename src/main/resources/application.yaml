@@ -1,0 +1,15 @@
+server:
+  port: 8190
+  servlet:
+    context-path: /demo
+    session:
+      timout: 60s
+    jpa:
+      show-sql: true
+      hibernate:
+        ddl-auto: none
+    datasource:
+      driver-class-name: org.h2.Driver
+      url: jdbc:h2:mem:mydatabase;MODE=PostgreSQL
+      username: sa
+      password:
